@@ -1,0 +1,11 @@
+p span {
+  background: #f00;
+}
+p b {
+  background: #000;
+}
+p:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+// @mixin btn {
+//     width: 200px;
+//     padding: 10px 0;
+//     background: none;
+//     border: 0;
+//     border-radius: 10px;
+//     font-weight: 400;
+//     display: block;
+//     margin: 10px 0;
+
+//     //herança de atributos
+//     // &.btn-orange {
+//     //     background: orange;
+//     // }
+// }
+
+// //cria um mix personalizado para cores
+// @mixin button-style($background, $color) {
+//     background: $background;
+//     color: $color;
+// }
+
+// .btn-orange {
+    //     @include btn;
+    //     @include button-style($color-orange, #fff); //usando o mixin
+    // }
+    
+    // .btn-purple {
+        //     @include btn;
+        //     @include button-style($color-purple, #fff); //usando o mixin
+        // }
+        
+        // .btn-green {
+            //     @include btn;
+            //     @include button-style($color-green, #fff); //usando o mixin
+            // }
+            
+            // .btn-yellow {
+                //     @include btn;
+                //     @include button-style($color-yellow, #a55800); //usando o mixin
+                // }
+                
+                
+
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+    &:hover {
+        // background: darken($background, 5%); // tom de dark
+        // background: desaturate($background, 20%); //saturação da cor
+        // background: mix($background, blue); //mistura as cores
+        background: grayscale($background); // tons de cinza
+    }
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+
+    &.btn-orange {
+        @include button-style($color-orange, #fff); //usando o mixin    
+    }
+
+    &.btn-purple {
+        @include button-style($color-purple, #fff); //usando o mixin
+    }
+
+    &.btn-green {
+        @include button-style($color-green, #fff); //usando o mixin
+    }
+
+    &.btn-yellow {
+        @include button-style($color-yellow, #000); //usando o mixin
+    }
+}

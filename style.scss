@@ -1,0 +1,18 @@
+p {
+    span {
+        background: #f00;
+    }
+
+    b {
+        background: #000;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+// body{
+//     color: blue;
+// }
+
