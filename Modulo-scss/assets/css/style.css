@@ -1,40 +1,5 @@
-.btn {
-  width: 200px;
-  padding: 10px 0;
-  background: none;
-  border: 0;
-  border-radius: 10px;
-  font-weight: 400;
-  display: block;
-  margin: 10px 0;
-}
-.btn.btn-orange {
-  background: #ffa500;
-  color: #fff;
-}
-.btn.btn-orange:hover {
-  background: gray;
-}
-.btn.btn-purple {
-  background: #65016e;
-  color: #fff;
-}
-.btn.btn-purple:hover {
-  background: #383838;
-}
-.btn.btn-green {
-  background: #007728;
-  color: #fff;
-}
-.btn.btn-green:hover {
-  background: #3c3c3c;
-}
-.btn.btn-yellow {
-  background: #ffff00;
-  color: #000;
-}
-.btn.btn-yellow:hover {
-  background: gray;
-}
+.btn{width:200px;padding:10px 0;background:none;border:0;border-radius:10px;font-weight:400;display:block;margin:10px 0}.btn.btn-orange{background:orange;color:#fff}.btn.btn-orange:hover{background:gray}.btn.btn-purple{background:#65016e;color:#fff}.btn.btn-purple:hover{background:#383838}.btn.btn-green{background:#007728;color:#fff}.btn.btn-green:hover{background:#3c3c3c}.btn.btn-yellow{background:#ff0;color:#000}.btn.btn-yellow:hover{background:gray}/*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=style.css.map */
+/*
+mimificar: sass ./assets/scss/style.scss:./assets/css/style.css --style compressed
+*/
